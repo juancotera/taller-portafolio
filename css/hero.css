@@ -18,6 +18,7 @@
 }
 
 .hero-image img{
+  transition: .3s;
   border-radius: 15px;
 }
 
@@ -31,4 +32,31 @@
 .hero h1 span:nth-of-type(1){
   font: var(--headline5);
   display: block;
+}
+
+@media screen and (min-width: 768px){
+  .hero{
+    display: flex;
+    gap: 32px;
+  }
+
+  .hero-description{
+    order: 1;
+    inline-size: 450px;
+  }
+
+  .hero-image{
+    order: 2;
+    flex: 1; /*para que el contenedor tome el ancho max*/
+    text-align: end;
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+  .hero-image img{
+    transition: .5s;
+    inline-size: 500px;
+    block-size: 504px;
+  }
 }
