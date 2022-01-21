@@ -1,0 +1,80 @@
+.testimonio{
+  margin-block-end: 80px;
+  margin-block-start: 80px;
+}
+
+.testimonio-content{
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(39.7657px);
+  border: 3.38px solid rgba(255, 255, 255, .2);
+  border-radius: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.testimonio-image{
+  padding-block-end: 24px;
+}
+
+.testimonio-image img{
+  border-radius: 50%;
+}
+
+.testimonio-description p{
+  margin: 0;
+}
+
+.testimonio-description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+  font: var(--caption);
+  color: var(--purple);
+}
+
+.testimonio-description p:first-child{
+  font: var(--fontOxygenB);
+  color: var(--purple);
+
+}
+
+@media screen and (min-width: 768px){
+  .testimonio-image img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonio-description p{
+    margin: 0;
+    text-align: center;
+  }
+
+  .testimonio-description p:nth-child(even){
+    font:var(--headline5);
+    opacity: .5;
+  }
+
+  .testimonio-description p:first-child{
+    font-size: 34px;
+    line-height: 55.1px;
+    opacity: 1;
+    color: var(--purple);
+
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .testimonio{
+    max-inline-size: 1132px;
+    margin: auto;
+    margin-block-end: 80px;
+    margin-block-start: 80px;
+  }
+}
