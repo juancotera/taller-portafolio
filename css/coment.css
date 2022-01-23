@@ -1,7 +1,7 @@
 .coment{
   text-align: center;
-  margin-block-end: 40px;
-  margin-block-start: 40px;
+  padding-block-end: 40px;
+  padding-block-start: 40px;
   /* margin-inline-end: 233px;
   margin-inline-start: 233px; */
 
@@ -12,7 +12,7 @@
   flex-direction: column;
   font: var(--headline5);
   color: var(--purple);
-  justify-content: center;
+  /* justify-content: center; */
   gap: 24px;
 }
 
@@ -38,12 +38,18 @@
 
 @media screen and (min-width: 768px){
   .coment{
-    text-align: center;
-    margin-block-end: 200px;
-    margin-block-start: 200px;
-    margin-inline-end: 233px;
-    margin-inline-start: 233px;
+    margin-block-end: 80px;
+    margin-block-start: 80px;
+  }
 
+  .coment-content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .coment-description{
+    max-inline-size: 900px;
+    text-align: center;
   }
 
   .coment p:first-child{
