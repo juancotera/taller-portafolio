@@ -1,50 +1,40 @@
-.testimony{
+.project{
   padding-block-start: 40px;
   padding-block-end: 40px;
 }
 
-.testimony-description{
+.project-description{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.testimony-description p{
+.project-description p{
   color: var(--purple);
 }
 
-.testimony-title{
-  align-self: flex-start;
-  background: var(--purple);
-  color: var(--white);
-  font: var(--headline5);
-  padding-block-start: 4px;
-  padding-block-end: 4px;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
-  text-decoration: none;
-  box-shadow: -4px 4px 0 var(--white);
-}
 
-.testimony-image img{
+
+.project-image img{
   max-inline-size: 100%; /*para que en el responsive se adapte a su contenedor*/
 }
 
 @media screen and (min-width: 768px) {
-  .testimony{
+  .project{
     display: flex;
     align-items: center;
+    /* gap: 32px; */
     padding-block-start: 80px;
     padding-block-end: 80px;
 
   }
 
-  .testimony-description{
+  .project-description{
     flex: 1;
   }
 
   /*modo escritorio las imagenes y el text se intercalan*/
-  .testimony:nth-of-type(odd) .testimony-image{
+  .project:nth-of-type(odd) .project-image{
     order: 2;
     flex: 1;
     text-align: center;
