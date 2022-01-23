@@ -1,11 +1,11 @@
 .card{
-  margin-block-end: 80px;
-  margin-block-start: 80px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
 }
 
 .card-content{
   background: rgba(255, 255, 255, .2);
-  backdrop-filter: blur(39.7657px);
+  /* backdrop-filter: blur(39.7657px); */
   border: 3.38px solid rgba(255, 255, 255, .2);
   border-radius: 24px;
   padding-block-start: 24px;
@@ -46,6 +46,11 @@
 }
 
 @media screen and (min-width: 768px){
+  .card{
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+
   .card-image img{
     width: 80px;
     height: 80px;
@@ -58,7 +63,7 @@
 
   .card-description p:nth-child(even){
     font:var(--headline5);
-    opacity: .5;
+    color: #300a907e;
   }
 
   .card-description p:first-child{
@@ -74,7 +79,7 @@
   .card{
     max-inline-size: 1132px;
     margin: auto;
-    margin-block-end: 80px;
-    margin-block-start: 80px;
+    /* margin-block-end: 80px;
+    margin-block-start: 80px; */
   }
 }

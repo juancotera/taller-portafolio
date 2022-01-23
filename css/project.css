@@ -13,7 +13,11 @@
   color: var(--purple);
 }
 
-
+.project-button{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 .project-image img{
   max-inline-size: 100%; /*para que en el responsive se adapte a su contenedor*/
@@ -31,6 +35,13 @@
 
   .project-description{
     flex: 1;
+    max-inline-size: 449px;
+  }
+
+  .project-button{
+    display: flex;
+    flex-direction: row;
+   gap: 16px;
   }
 
   /*modo escritorio las imagenes y el text se intercalan*/
