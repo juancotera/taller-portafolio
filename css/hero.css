@@ -20,6 +20,8 @@
 .hero-image img{
   transition: .3s;
   border-radius: 15px;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .hero h1{

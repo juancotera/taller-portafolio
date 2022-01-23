@@ -5,7 +5,9 @@
 @import './wrapper.css';
 @import './menu.css';
 @import './coment.css';
-@import './testimonio.css';
+@import './card.css';
+@import './testimony.css';
+
 
 
 :root{
